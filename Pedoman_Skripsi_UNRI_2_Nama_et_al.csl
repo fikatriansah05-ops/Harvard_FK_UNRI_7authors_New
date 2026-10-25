@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" default-locale="id-ID">
+  <info>
+    <title>Pedoman Skripsi UNRI - 2 Penulis dan Et Al</title>
+    <title-short>Pedoman Skripsi UNRI</title-short>
+    <id>http://www.zotero.org/styles/pedoman-skripsi-unri-custom</id>
+    <link href="http://www.zotero.org/styles/pedoman-skripsi-unri-custom" rel="self"/>
+    <updated>2026-08-10T00:00:00+00:00</updated>
+  </info>
+  <locale xml:lang="id">
+    <terms>
+      <term name="and">dan</term>
+      <term name="et-al">et al.</term>
+    </terms>
+  </locale>
+  <citation et-al-min="3" et-al-use-first="1">
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <names variable="author">
+        <name and="text" delimiter=", " delimiter-precedes-last="never"
+              initialize-with=". " name-as-sort-order="all" sort-separator=", "
+              et-al-min="3" et-al-use-first="1"/>
+      </names>
+      <date variable="issued" prefix=", ">
+        <date-part name="year"/>
+      </date>
+    </layout>
+  </citation>
+  <bibliography hanging-indent="true" et-al-min="7" et-al-use-first="6">
+    <sort>
+      <key variable="author"/>
+      <key variable="issued"/>
+      <key variable="title"/>
+    </sort>
+    <layout suffix=".">
+      <names variable="author" suffix=". ">
+        <name and="text" delimiter=", " delimiter-precedes-last="never"
+              initialize-with=". " name-as-sort-order="all" sort-separator=", "
+              et-al-min="7" et-al-use-first="6"/>
+      </names>
+      <date variable="issued" suffix=". ">
+        <date-part name="year"/>
+      </date>
+      <text variable="title" font-style="italic" suffix="."/>
+    </layout>
+  </bibliography>
+</style>
